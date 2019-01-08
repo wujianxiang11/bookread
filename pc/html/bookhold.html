@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="books.css"> <!-- 引用CSS文件 -->
+	<link rel="stylesheet" type="text/css" href="iconfont/font/iconfont.css"><!-- 导入箭头插件 -->
+	<link rel="stylesheet" href="../swiper/css/swiper.css"><!-- 轮播图的CSS文件 -->
+	<script src="../swiper/js/swiper.js"></script><!-- 轮播图的js文件 -->
+	<script src="jq/jquery/jquery1.7/jquery-1.7.js"></script><!-- jquery文件 -->
+	<script src="datasJS/datasServer.js"></script> <!-- 获取库文件 -->
+	<script src="head.js"></script><!-- js文件 -->
+	
+	
+</head>
+<body>
+	<!-- 前头标题 -->
+	<div class="title">
+		<div class="mintitle">
+			<div class="mintitle1">
+				<a href="javascript:void(0)">欢迎光临好学图书网</a>
+				<a href="javascript:void(0)">请登录</a>
+				<a href="javascript:void(0)">免费注册</a>
+			</div>
+			<div class="mintitle2">
+				<div><a href="javascript:void(0)">购物车</a></div>
+				<div><a href="javascript:void(0)">我的订单</a></div>
+				<div class="hid">
+					<a href="javascript:void(0)">个人账户<i class="iconfont icon">&#xe64a;</i></a>
+					<a href="javascript:void(0)" class="hidden">个人信息</a>
+					<a href="javascript:void(0)" class="hidden">收货地址</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- 前头标题 -->
+	<!-- head内容 -->
+	<div class="head">
+		<div class="headcenter">
+			<div>
+				<img src="images/index01.png" alt="">
+			</div>
+			<div class="dingkuan">
+				<input type="text" class="headinput1"><input type="button" class="headinput2"
+					value="搜索" disabled>
+				<div>
+					<a href="javascript:void(0)">史蒂芬.霍金&nbsp;&nbsp;/&nbsp;</a>
+					<a href="javascript:void(0)">刺杀骑士团长&nbsp;&nbsp;/&nbsp;</a>
+					<a href="javascript:void(0)">蒙台梭利育儿全书&nbsp;&nbsp;/&nbsp;</a>
+					<a href="javascript:void(0)">阿加莎.克里斯蒂</a>
+				</div>
+			</div>
+			<div class='headcenter01'>
+				<img src="images/index01.png" alt="" class="imgs">
+			</div>
+		</div>
+	</div>
+	<!-- head内容 -->
+	<!-- 图书分类 -->
+	<div class="fenlei">
+		<div class="nav1">
+			<div><p>图书分类</p></div>
+			<div><a href="javascript:void(0)">首页</a></div>
+			<div><a href="javascript:void(0)">淘书团</a></div>
+			<div><a href="javascript:void(0)">畅销榜</a></div>
+			<div><a href="javascript:void(0)">新上架</a></div>
+			<div><a href="javascript:void(0)">平台自营</a></div>
+			<div><a href="javascript:void(0)">出版社直销</a></div>
+		</div>
+	</div>
+	<!-- 图书分类 -->
+	<!-- body主体top -->
+	<div class="body">
+		<div class="bodyfirst">
+
+			<div class="bodyccc">
+					<div class="bodyfirst001">
+						
+					</div>
+					<div class="divif">
+						<div class="divlast">全部商品分类....</div>
+					</div>
+			</div>
+				
+			<div>
+				<img src="images/index-web_03.png" alt="">
+			</div>
+		</div>
+		
+		<div class="bodysecond">
+			<div class="swiper-container">
+				<div class="bodysecond1 swiper-wrapper">
+				</div>
+				<div class="swiper-pagination"></div>
+		<!-- 定义箭头 -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		
+			<!--  -->
+			<div class="bodythird">
+				<div class="bodythird1">
+					<div class="bodysthird1">
+						<div onclick="change('guessLikes',this)" class='cainixihuan'>猜你喜欢</div>
+						<div onclick="change('selected',this)" class="cainixihuan">本周精选</div>
+						<div onclick="change('recommend',this)" class="cainixihuan">主编推荐</div>
+					</div>
+					<div class="bodysthird3"></div>
+					<div class="bodysthird4">
+						
+					</div>
+				</div>
+				<div class="bodythird2">
+					<div class="bodythird4">
+						<div class="bodythird5">图书畅销榜</div>
+						<div>更多>></div>
+					</div>
+					<div class="bodythird3">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- tupian -->
+	<div class='body2'>
+		<div>
+			<img src="images/index-web_07.png" alt="">
+		</div>
+		<div>
+			<img src="images/index-web_09.png" alt="">
+		</div>
+		<div>
+			<img src="images/index-web_11.png" alt="">
+		</div>
+	</div>
+	<!-- 淘书团热销 -->
+	<div class="taoshu">
+		<div class="taoshu1">淘书团热销</div>
+		<div class="taoshu2">查看更多商品>></div>
+	</div>
+	<div class="bodytaoshu">
+		
+	</div>
+	<!-- 新书上架促销 -->
+	<div class="xinshu">
+		<div class="xinshu1">新书上架促销</div>
+		<div class="xinshu2">查看更多商品>></div>
+	</div>
+	<div class="xinshu01">
+		
+	</div>
+	<!-- 平台自营 -->
+	<div class="pingtai">
+			<div class="pingtaiziy">平台自营</div>
+			<div class="pingtaititle"></div>
+	</div>
+	<div class="pingtai01">
+		<div class="pingtai02"></div>
+		<div class="pingtai03"></div>
+	</div>
+	<!-- 出版社直销 -->
+	<div class="chuban">
+		<b>出版社直销</b>
+	</div>
+	<div class="chuban001">
+		<div class="chuban1">
+			<div class="chuban11"></div>
+			<div class="chuban12">
+				<div class="chuban21" onclick="dianji()"><i class="iconfont icon-jiantou-copy-copy-copy"></i></div>
+				<div class="chunban22" onclick="dianji2()"><i class="iconfont icon-jiantou-copy-copy"></i></div>
+			</div>
+		</div>
+		<div class="chubanright">
+				<div class="chubantop"></div>
+				<div class="chubanbt"></div>
+		</div>
+	</div>
+<!-- 作品 -->
+	<div class="zuop1">
+		&copy;2018南京网博优壹 BY:WJX
+		<br>
+		2018.8.16.16.30
+	</div>
+		
+
+
+
+
+</body>
+</html>
